@@ -18,18 +18,15 @@ const Register = () => {
       </div>
     );
   }
-  if (user) {
-    navigate("/home");
-  }
+
   const formHandleLogin = (event) => {
     const name = nameRef.current.value;
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
     createUserWithEmailAndPassword(email, password);
+    navigate("/home");
   };
-  const handleLogin = () => {
-    navigate("/login");
-  };
+
   return (
     <div className="form-register">
       <h1 className="text-center text-primary">Please Register</h1>
@@ -71,7 +68,6 @@ const Register = () => {
         <Link
           to="/login"
           className="text-primary pe-auto text-decoration-none "
-          onClick={handleLogin}
         >
           Login
         </Link>

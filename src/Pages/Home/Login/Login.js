@@ -6,9 +6,6 @@ const Login = () => {
   const navigate = useNavigate();
   const emailRef = useRef();
   const passwordRef = useRef();
-  const handleRegister = () => {
-    navigate("/register");
-  };
 
   const formSubmit = (event) => {
     event.preventDefault();
@@ -31,7 +28,7 @@ const Login = () => {
           />
         </Form.Group>
         <Button variant="primary" type="submit">
-          Submit
+          Login
         </Button>
       </Form>
       <p>
@@ -39,7 +36,6 @@ const Login = () => {
         <Link
           to="/register"
           className="text-primary pe-auto text-decoration-none "
-          onClick={handleRegister}
         >
           Register
         </Link>
