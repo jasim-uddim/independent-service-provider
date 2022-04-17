@@ -1,30 +1,49 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Button, Form } from "react-bootstrap";
-
+import { Link, useNavigate } from "react-router-dom";
+import "./Login.css";
 const Login = () => {
+  const navigate = useNavigate();
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const handleRegister = () => {
+    navigate("/register");
+  };
+
+  const formSubmit = (event) => {
+    event.preventDefault();
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
+  };
   return (
-    <div>
-      <h1>please Login</h1>
-      <Form>
+    <div className="form-container">
+      <h1 className="text-center text-primary my-2">please Login</h1>
+      <Form onSubmit={formSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
+          <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
+          <Form.Control
+            ref={passwordRef}
+            type="password"
+            placeholder="Password"
+          />
         </Form.Group>
         <Button variant="primary" type="submit">
           Submit
         </Button>
       </Form>
+      <p>
+        gym services ?{" "}
+        <Link
+          to="/register"
+          className="text-primary pe-auto text-decoration-none "
+          onClick={handleRegister}
+        >
+          Register
+        </Link>
+      </p>
     </div>
   );
 };

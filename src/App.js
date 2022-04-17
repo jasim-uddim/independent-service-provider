@@ -3,6 +3,7 @@ import "./App.css";
 import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Home/Login/Login";
+import Register from "./Pages/Register/Register";
 import ServiceDetails from "./Pages/ServiceDetails/ServiceDetails";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Header from "./Pages/Shared/Header/Header";
@@ -20,6 +21,7 @@ function App() {
           path="/serviceDetails"
           element={<ServiceDetails></ServiceDetails>}
         ></Route>
+        <Route path="/register" element={<Register></Register>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
