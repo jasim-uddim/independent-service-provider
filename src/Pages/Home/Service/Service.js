@@ -13,8 +13,11 @@ const Service = ({ service }) => {
       <h1>name: {name}</h1>
       <p>price :${price}</p>
       <p>{about}</p>
-      <button onClick={serviceDetails} className="bg-primary text-center">
-        book:service details
+      <button
+        onClick={serviceDetails}
+        className="bg-primary text-center d-block"
+      >
+        Book now
       </button>
     </div>
   );
