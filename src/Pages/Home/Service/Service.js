@@ -10,15 +10,17 @@ const Service = ({ service }) => {
   return (
     <div className="p-2 mt-5">
       <img style={{ height: "400px" }} className="w-100" src={img} alt="" />
-      <h1>name: {name}</h1>
-      <p>price :${price}</p>
-      <p>{about}</p>
-      <button
-        onClick={serviceDetails}
-        className="bg-primary text-center d-block"
-      >
-        Book now
-      </button>
+      <h1> {name}</h1>
+      <p className="p-2">price :${price}</p>
+      <p className="p-2">{about}</p>
+      <div className="text-center">
+        <button
+          onClick={serviceDetails}
+          className="bg-primary border-0 rounded text-white"
+        >
+          Book now
+        </button>
+      </div>
     </div>
   );
 };

@@ -10,7 +10,10 @@ const ServiceDetails = () => {
     <div>
       <h1 className="text-center text-primary my-5">special service</h1>
       <div className="text-center">
-        <button onClick={handleCheckOut} className="bg-primary p-2">
+        <button
+          onClick={handleCheckOut}
+          className="bg-primary p-2 border-0 rounded text-white"
+        >
           proceed checkout
         </button>
       </div>

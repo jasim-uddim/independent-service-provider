@@ -8,12 +8,15 @@ const OnlineService = ({ onlineService }) => {
     navigate("/serviceDetails");
   };
   return (
-    <div className="online-container mt-2">
+    <div className="online-container mt-2 col-sm-12 col-md-6 col-lg-4">
       <img src={img} alt="" />
       <h1>name :{name}</h1>
       <p> price:{price}</p>
       <p>{about}</p>
-      <button onClick={serviceDetails} className="bg-primary">
+      <button
+        onClick={serviceDetails}
+        className="bg-primary border-0 rounded text-white"
+      >
         book now
       </button>
     </div>

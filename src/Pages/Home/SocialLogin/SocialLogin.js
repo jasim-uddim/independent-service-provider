@@ -1,22 +1,36 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import google from "../../../images/social/google (1).png";
 import github from "../../../images/social/github.png";
-import { useSignInWithGoogle } from "react-firebase-hooks/auth";
+import {
+  useSignInWithGithub,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
+import Loading from "../Loading/Loading";
 
 const SocialLogin = () => {
+  const navigate = useNavigate();
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+  const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
   let errorElement;
   if (error) {
     errorElement = (
       <div>
-        <p className="text-danger">Error: {error.message}</p>
+        <p className="text-danger">Error: {error?.message}</p>
       </div>
     );
   }
+  if (loading || loading1) {
+    return <Loading></Loading>;
+  }
+  if (user) {
+    navigate("/");
+  }
   const handleSignInWithGoogle = () => {
     signInWithGoogle();
+  };
+  const handleSignInWithGithub = () => {
+    signInWithGithub();
   };
   return (
     <div>
@@ -36,7 +50,10 @@ const SocialLogin = () => {
         </button>
       </Link>
       <Link className="d-block text-center my-2 " to="/home">
-        <button className="bg-info p-2 w-50 text-center border-0 rounded">
+        <button
+          onClick={handleSignInWithGithub}
+          className="bg-info p-2 w-50 text-center border-0 rounded"
+        >
           <img src={github} alt="" />
           <span className="ps-2">Github</span>
         </button>

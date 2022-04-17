@@ -12,7 +12,7 @@ const OnlineServices = () => {
   return (
     <div id="online">
       <h1 className="text-center my-2 text-primary">Online service</h1>
-      <div className="online-service">
+      <div className="online-service row">
         {onlineServices.map((onlineService) => (
           <OnlineService
             key={onlineService.id}

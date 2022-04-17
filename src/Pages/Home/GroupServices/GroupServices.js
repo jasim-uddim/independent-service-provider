@@ -12,7 +12,7 @@ const GroupServices = () => {
   return (
     <div>
       <h1 className="mt-5 text-center">Groups service</h1>
-      <div className="group-service">
+      <div className="group-service row">
         {groups.map((group) => (
           <Group key={group.id} group={group}></Group>
         ))}
