@@ -8,11 +8,8 @@ const Service = ({ service }) => {
     navigate("/serviceDetails");
   };
   return (
-    <div
-      className="card col-sm-12 col-md-6 col-lg-4"
-      style={{ width: "24rem" }}
-    >
-      <img src={img} class="card-img-top" alt="..." />
+    <div className="card col-sm-12 col-md-6 col-lg-4 p-2">
+      <img src={img} class="card-img-top w-100" alt="..." />
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
         <p className="card-text">price:{price}</p>

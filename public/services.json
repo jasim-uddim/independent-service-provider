@@ -1,45 +1,135 @@
 [
-  {
-    "id": "1",
-    "img": "https://i.ibb.co/PYPpy8S/sven-mieke-Lx-GDv7-VA9-M-unsplash.jpg",
+  [
+    {
+      "id": "1",
+      "img": "https://i.ibb.co/PYPpy8S/sven-mieke-Lx-GDv7-VA9-M-unsplash.jpg",
 
-    "price": 230,
-    "name": "PERSONAL TRAINING",
-    "about": "Behind every MOVATI Athletic Trainer you’ll find a caring professional, with a wealth of knowledge. No matter the budget or goals we have a coach for you."
-  },
-  {
-    "id": "2",
-    "img": "https://i.ibb.co/FK7C2NM/anastase-maragos-Hyv-E5-Si-KMUs-unsplash.jpg",
-    "price": 803,
-    "name": "GROUP PERSONAL TRAINING",
-    "about": "It's more than just a workout. MOVATI Athletic's exclusive Group Personal Training programs allow you to experience the benefits of working with a Personal "
-  },
-  {
-    "id": "3",
-    "img": "https://i.ibb.co/JFPccr1/jonathan-borba-R0y-b-EUji-OM-unsplash.jpg",
-    "price": 233,
-    "name": "VIRTUAL TRAINING",
-    "about": "Trainer in an energetic and motivating group setting. Our expert coaches lead dynamic workouts individually targeted to your fitness needs, allowing you to minimize time & maximize results."
-  },
-  {
-    "id": "4",
-    "img": "https://i.ibb.co/9Hh0dmD/annie-spratt-o-Qf-SHQ2-Uaic-unsplash.jpg",
-    "price": 730,
-    "name": "MOBILITY",
-    "about": "All you need is an internet connection and computer or mobile device to live stream your session. Your MOVATI personal trainer will create a personalized plan for you and coach you just like an in-person session. "
-  },
-  {
-    "id": "5",
-    "img": "https://i.ibb.co/WznB4Qn/sam-moqadam-v-OZP2-Lojr-HI-unsplash.jpg",
-    "price": 453,
-    "name": "PERSONAL TRAINING",
-    "about": "Discover how easy it is to connect, interact and get results with virtual personal training. All from the convenience and comfort of your home, or wherever you are.All you need is an internet connection and computer or mobile device to live stream your session. Your MOVATI personal trainer will create a personalized plan for you and coach you just like an in-person session.Trainer in an energetic and motivating group setting. Our expert coaches lead dynamic workouts individually targeted to your fitness needs, allowing you to minimize time & maximize results."
-  },
-  {
-    "id": "6",
-    "img": "https://i.ibb.co/wdGd2Zm/nathan-dumlao-NXMZxyg-Mw8o-unsplash.jpg",
-    "price": 530,
-    "name": "NUTRITION",
-    "about": "Athletic Trainer you’ll find a caring professional, with a wealth of knowledge. No matter the budget or goals we have a coach for you."
-  }
+      "price": 230,
+      "name": "PERSONAL TRAINING",
+      "about": "Behind every MOVATI Athletic Trainer you’ll find a caring professional, with a wealth of knowledge. No matter the budget or goals we have a coach for you."
+    },
+    {
+      "id": "2",
+      "img": "https://i.ibb.co/FK7C2NM/anastase-maragos-Hyv-E5-Si-KMUs-unsplash.jpg",
+      "price": 803,
+      "name": "GROUP PERSONAL TRAINING",
+      "about": "It's more than just a workout. MOVATI Athletic's exclusive Group Personal Training programs allow you to experience the benefits of working with a Personal "
+    },
+    {
+      "id": "3",
+      "img": "https://i.ibb.co/JFPccr1/jonathan-borba-R0y-b-EUji-OM-unsplash.jpg",
+      "price": 233,
+      "name": "VIRTUAL TRAINING",
+      "about": "Trainer in an energetic and motivating group setting. Our expert coaches lead dynamic workouts individually targeted to your fitness needs, allowing you to minimize time & maximize results."
+    },
+    {
+      "id": "4",
+      "img": "https://i.ibb.co/9Hh0dmD/annie-spratt-o-Qf-SHQ2-Uaic-unsplash.jpg",
+      "price": 730,
+      "name": "MOBILITY",
+      "about": "All you need is an internet connection and computer or mobile device to live stream your session. Your MOVATI personal trainer will create a personalized plan for you and coach you just like an in-person session. "
+    },
+    {
+      "id": "5",
+      "img": "https://i.ibb.co/WznB4Qn/sam-moqadam-v-OZP2-Lojr-HI-unsplash.jpg",
+      "price": 453,
+      "name": "PERSONAL TRAINING",
+      "about": "Discover how easy it is to connect, interact and get results with virtual personal training. All from the convenience and comfort of your home, or wherever you are.All you need is an internet connection and computer or mobile device to live stream your session. Your MOVATI personal trainer will create a personalized plan for you and coach you just like an in-person session.Trainer in an energetic and motivating group setting. Our expert coaches lead dynamic workouts individually targeted to your fitness needs, allowing you to minimize time & maximize results."
+    },
+    {
+      "id": "6",
+      "img": "https://i.ibb.co/wdGd2Zm/nathan-dumlao-NXMZxyg-Mw8o-unsplash.jpg",
+      "price": 530,
+      "name": "NUTRITION",
+      "about": "Athletic Trainer you’ll find a caring professional, with a wealth of knowledge. No matter the budget or goals we have a coach for you."
+    }
+  ],
+  [
+    {
+      "id": "1",
+      "img": "https://i.ibb.co/p3knS50/annie-spratt-l-eem-JU0v-E-unsplash.jpg",
+      "price": 300,
+      "name": "MOBILITY",
+      "about": "All you need is an internet connection and computer or mobile device to live stream your session. Your MOVATI personal trainer will create a personalized plan for you and coach you just like an in-person session."
+    },
+    {
+      "id": "2",
+      "img": "https://i.ibb.co/djmSL7s/bruce-mars-g-Jt-Dg6-Wf-Ml-Q-unsplash.jpg",
+      "price": 800,
+      "name": "PERSONAL TRAINING",
+      "about": "Discover how easy it is to connect, interact and get results with virtual personal training. All from the convenience and comfort of your home, or wherever you are.All you need is an internet connection and computer or mobile device to live stream your session."
+    },
+    {
+      "id": "3",
+      "img": "https://i.ibb.co/thsLGCx/sam-moqadam-Z4-Q9-KHw9of-E-unsplash.jpg",
+      "price": 500,
+      "name": "MOBILITY",
+      "about": "All you need is an internet connection and computer or mobile device to live stream your session. Your MOVATI personal trainer will create a personalized plan for you and coach you just like an in-person session"
+    },
+    {
+      "id": "4",
+      "img": "https://i.ibb.co/fd5BBXX/sule-makaroglu-Pn-UYk-TFk-OD0-unsplash.jpg",
+      "price": 503,
+      "name": "VIRTUAL TRAINING",
+      "about": "Trainer in an energetic and motivating group setting. Our expert coaches lead dynamic workouts individually targeted to your fitness needs, allowing you to minimize time & maximize results."
+    },
+    {
+      "id": "5",
+      "img": "https://i.ibb.co/JFPccr1/jonathan-borba-R0y-b-EUji-OM-unsplash.jpg",
+      "price": 450,
+      "name": "VIRTUAL TRAINING",
+      "about": "It's more than just a workout. MOVATI Athletic's exclusive Group Personal Training programs allow you to experience the benefits of working with a Personal"
+    },
+    {
+      "id": "6",
+      "img": "https://i.ibb.co/WznB4Qn/sam-moqadam-v-OZP2-Lojr-HI-unsplash.jpg",
+      "price": 350,
+      "name": "PERSONAL TRAINING",
+      "about": "Behind every MOVATI Athletic Trainer you’ll find a caring professional, with a wealth of knowledge. No matter the budget or goals we have a coach for you."
+    }
+  ],
+  [
+    {
+      "id": "1",
+      "img": "https://i.ibb.co/8sYcnqy/victor-freitas-Kk-YWWpurqb-E-unsplash.jpg",
+      "price": 450,
+      "name": "MOBILITY",
+      "about": "The Explosion of Gyms located in Health Clubs, Spa’s, Hotels, Cruise Ships and the need for professionally trained Gym Instructors and Personal Trainers has opened up huge opportunities for long term career opportunities in the Fitness Industry, nationally and internationally."
+    },
+    {
+      "id": "2",
+      "img": "https://i.ibb.co/9rkCdjY/inspired-horizons-digital-marketing-Xqxnqyq-DU0k-unsplash.jpg",
+      "price": 600,
+      "name": "PERSONAL TRAINING",
+      "about": "Wherever you go in the World people travelling for business or holiday expect to be able to access a gym and a qualified and experienced Gym Instructor or Personal Trainer. Demand for both outstrips supply!"
+    },
+    {
+      "id": "3",
+      "img": "https://i.ibb.co/xS86dPJ/alora-griffiths-BNrqnvtz-Xio-unsplash.jpg",
+      "price": 1000,
+      "name": "MOBILITY",
+      "about": "It’s a culture which is not going to go away and which you could expand into a career where you go focus on sport, qualifying in Sports Massage for example progressing to Degree level, or progress into management. It’s up to you!"
+    },
+    {
+      "id": "4",
+      "img": "https://i.ibb.co/q939gCB/bruce-mars-ZXq7xoo98b0-unsplash.jpg",
+      "price": 755,
+      "name": "VIRTUAL TRAINING",
+      "about": "The reality is the scope and variety of locations and types of organisations who need professionally trained people will mean that the time you invest in training will be an investment in a long term career."
+    },
+    {
+      "id": "5",
+      "img": "https://i.ibb.co/4Ncmrsm/crosby-hinze-kv-JYl-UXk4h-Q-unsplash.jpg",
+      "price": 690,
+      "name": "VIRTUAL TRAINING",
+      "about": "You must hold a nationally recognised qualification and at LCBT Fitness we work with Skills Active, recognised as the Gold Standard by industry and for entry on to the REPS register for those qualifying as Personal Trainers."
+    },
+    {
+      "id": "6",
+      "img": "https://i.ibb.co/N1wqJms/crosby-hinze-p-Kze3wa-MYVw-unsplash.jpg",
+      "price": 400,
+      "name": "PERSONAL TRAINING",
+      "about": "As well as Further Education Funded Diploma and Certificate programmes we offer a wide variety of short CPD programmes to enable qualified Gym Instructors and Personal Trainers to expand their skills and career opportunities."
+    }
+  ]
 ]
