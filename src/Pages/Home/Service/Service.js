@@ -8,18 +8,23 @@ const Service = ({ service }) => {
     navigate("/serviceDetails");
   };
   return (
-    <div className="p-2 mt-5 col-sm-12 col-md-6 col-lg-4">
-      <img style={{ height: "400px" }} className="w-100" src={img} alt="" />
-      <h1> {name}</h1>
-      <p className="p-2">price :${price}</p>
-      <p className="p-2">{about}</p>
-      <div className="text-center">
-        <button
-          onClick={serviceDetails}
-          className="bg-primary border-0 rounded text-white"
-        >
-          Book now
-        </button>
+    <div
+      className="card col-sm-12 col-md-6 col-lg-4"
+      style={{ width: "24rem" }}
+    >
+      <img src={img} class="card-img-top" alt="..." />
+      <div className="card-body">
+        <h5 className="card-title">{name}</h5>
+        <p className="card-text">price:{price}</p>
+        <p className="card-text">{about}</p>
+        <div className="text-center">
+          <button
+            onClick={serviceDetails}
+            className="bg-primary border-0 rounded text-white"
+          >
+            Book now
+          </button>
+        </div>
       </div>
     </div>
   );

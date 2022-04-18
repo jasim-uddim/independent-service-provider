@@ -10,9 +10,9 @@ const GroupServices = () => {
       .then((data) => setGroups(data));
   }, []);
   return (
-    <div>
+    <div id="group">
       <h1 className="mt-5 text-center">Groups service</h1>
-      <div className="group-service row">
+      <div className="group-service">
         {groups.map((group) => (
           <Group key={group.id} group={group}></Group>
         ))}

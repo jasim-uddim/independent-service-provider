@@ -1,7 +1,6 @@
 .group-service {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
 }
 .group-service img {
   width: 100%;
