@@ -3,7 +3,7 @@
 Live site link
 [https://gym-trainer-e31f7.web.app/](https://gym-trainer-e31f7.web.app/)
 
-## Create with :
+## Features:
 
 1.  React
 2.  Bootstrap
@@ -14,7 +14,7 @@ Live site link
 7.  Javascript
 8.  React toast
 
-## Feacher
+## services
 
 - Personal service
 - Group service
