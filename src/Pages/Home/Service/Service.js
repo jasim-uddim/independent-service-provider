@@ -8,7 +8,7 @@ const Service = ({ service }) => {
     navigate("/serviceDetails");
   };
   return (
-    <div className="p-2 mt-5">
+    <div className="p-2 mt-5 col-sm-12 col-md-6 col-lg-4">
       <img style={{ height: "400px" }} className="w-100" src={img} alt="" />
       <h1> {name}</h1>
       <p className="p-2">price :${price}</p>

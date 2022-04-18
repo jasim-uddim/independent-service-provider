@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import auth from "../../../firebase.init";
 
 const Header = () => {
-  const [user, loading, error] = useAuthState(auth);
+  const [user, error] = useAuthState(auth);
   const handleSignOut = () => {
     if (user) {
       signOut(auth);

@@ -5,14 +5,27 @@ import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import "./Register.css";
 import auth from "../../firebase.init";
 import SocialLogin from "../Home/SocialLogin/SocialLogin";
+import Loading from "../Home/Loading/Loading";
 
 const Register = () => {
   const navigate = useNavigate();
   const nameRef = useRef();
   const emailRef = useRef();
   const passwordRef = useRef();
-  const [createUserWithEmailAndPassword, user, loading, error] =
+  const [createUserWithEmailAndPassword, loading, error] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
+  const formHandleLogin = (event) => {
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
+    createUserWithEmailAndPassword(email, password);
+    navigate("/home");
+  };
+
+  if (loading) {
+    return <Loading></Loading>;
+  }
+
   if (error) {
     return (
       <div>
@@ -20,14 +33,6 @@ const Register = () => {
       </div>
     );
   }
-
-  const formHandleLogin = (event) => {
-    const name = nameRef.current.value;
-    const email = emailRef.current.value;
-    const password = passwordRef.current.value;
-    createUserWithEmailAndPassword(email, password);
-    navigate("/home");
-  };
 
   return (
     <div className="form-register">

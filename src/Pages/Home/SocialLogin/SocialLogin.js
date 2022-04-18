@@ -12,26 +12,34 @@ const SocialLogin = () => {
   const navigate = useNavigate();
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
+
+  const handleSignInWithGoogle = () => {
+    signInWithGoogle();
+  };
+
+  const handleSignInWithGithub = () => {
+    signInWithGithub();
+  };
+
   let errorElement;
-  if (error) {
+  if (error || error1) {
     errorElement = (
       <div>
-        <p className="text-danger">Error: {error?.message}</p>
+        <p className="text-danger">
+          Error: {error?.message}
+          {error1?.message}
+        </p>
       </div>
     );
   }
   if (loading || loading1) {
     return <Loading></Loading>;
   }
-  if (user) {
+
+  if (user || user1) {
     navigate("/");
   }
-  const handleSignInWithGoogle = () => {
-    signInWithGoogle();
-  };
-  const handleSignInWithGithub = () => {
-    signInWithGithub();
-  };
+
   return (
     <div>
       <div className="d-flex d-flex align-items-center">

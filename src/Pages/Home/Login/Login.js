@@ -11,6 +11,7 @@ import auth from "../../../firebase.init";
 
 import SocialLogin from "../SocialLogin/SocialLogin";
 import "./Login.css";
+import Loading from "../Loading/Loading";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -24,6 +25,18 @@ const Login = () => {
   const [user, loading, error] = useAuthState(auth);
   const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
   const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
+
+  if (loading || sending) {
+    return <Loading></Loading>;
+  }
+  let errorElement;
+  if (error) {
+    errorElement = (
+      <div>
+        <p>Error: {error.message}</p>
+      </div>
+    );
+  }
 
   const resetPassword = async () => {
     setEmail(emailRef.current.value);
@@ -67,6 +80,7 @@ const Login = () => {
             required
           />
         </Form.Group>
+        {errorElement}
         <Button variant="primary" type="submit">
           Login
         </Button>
