@@ -22,21 +22,15 @@ const Login = () => {
   const navigate = useNavigate();
   let from = location.state?.from?.pathname || "/";
 
-  const [user, loading, error] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
   const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
-  const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
+  const [signInWithEmailAndPassword, user1, loading1, error] =
+    useSignInWithEmailAndPassword(auth);
 
-  if (loading || sending) {
+  if (loading || sending || loading1) {
     return <Loading></Loading>;
   }
   let errorElement;
-  if (error) {
-    errorElement = (
-      <div>
-        <p>Error: {error.message}</p>
-      </div>
-    );
-  }
 
   const resetPassword = async () => {
     setEmail(emailRef.current.value);
@@ -54,11 +48,16 @@ const Login = () => {
     const password = passwordRef.current.value;
 
     signInWithEmailAndPassword(email, password);
+    if (error) {
+      errorElement = <p className="text-danger">Error: {error?.message}</p>;
+      alert(`${error?.message}`);
+    }
   };
 
   if (user) {
     navigate(from, { replace: true });
   }
+
   return (
     <div className="form-container">
       <h1 className="text-center text-primary my-2">please Login</h1>
@@ -80,11 +79,12 @@ const Login = () => {
             required
           />
         </Form.Group>
-        {errorElement}
+
         <Button variant="primary" type="submit">
           Login
         </Button>
       </Form>
+      {errorElement}
       <p>
         gym services ?{" "}
         <Link
